@@ -18,9 +18,8 @@ class StatesPages extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.message),
+        child: const Icon(Icons.message),
         onPressed: () {
-          print("asd");
           socketService.emit('emitir-mensaje', {'nombre': 'Juan'});
         },
       ),
